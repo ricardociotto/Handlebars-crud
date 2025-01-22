@@ -1,0 +1,14 @@
+body{
+    background-color: cyan;
+}
+body{
+    text-align: center;
+    display: flex;
+    align-self: center;
+}
+
+#index h1{
+    text-align: center;
+    display: flex;
+    align-self: center;
+}

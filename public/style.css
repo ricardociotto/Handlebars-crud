@@ -1,14 +1,147 @@
-body{
-    background-color: cyan;
-}
-body{
-    text-align: center;
-    display: flex;
-    align-self: center;
+.add-Products{
+   text-align: center;
 }
 
-#index h1{
-    text-align: center;
+.form-container {
     display: flex;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem; 
+    width: 300px; 
+    padding: 1rem; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.add-form label {
+    font-weight: bold;
+}
+.add-form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.add-form button:hover {
+    background-color: #0056b3;
+}
+
+
+body.index-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; 
+    color: #333; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 1rem;
+}
+
+.index-container {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 800px;
+    width: 100%; 
+    text-align: center; 
+}
+
+
+.index-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff; 
+}
+
+
+.index-container a {
+    display: inline-block;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.index-container a:hover {
+    background-color: #0056b3; 
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 1rem;
+}
+
+thead {
+    background-color: #007bff; 
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+tr:hover {
+    background-color: #f1f1f1; 
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+td {
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th, td {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    th {
+        background-color: #f4f4f9;
+        color: #333;
+        text-align: left;
+        font-size: 0.75rem;
+    }
+
+    td {
+        margin-bottom: 1rem;
+    }
 }

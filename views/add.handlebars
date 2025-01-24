@@ -1,8 +1,12 @@
-<h1>Add Books</h1>
-<form action="/add" method="POST">
-  <label for="name">name:</label>
-  <input type="text" id="name" name="name" required>
-  <label for="price">price:</label>
-  <input type="number" id="price" name="price" required>
-  <button type="submit">Save</button>
-</form>
+<body class="add-page">
+  <h1 class="add-Products">Add Products</h1>
+  <div class="form-container">
+    <form class="add-form" action="/add" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" required>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+</body>

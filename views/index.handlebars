@@ -1,25 +1,29 @@
-<h1>Product list</h1>
-<a href="/add">Add product</a>
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        {{#each Books}}
-        <tr>
-            <td>{{id}}</td>
-            <td>{{name}}</td>
-            <td>{{price}}</td>
-            <td>
-            <a href="/edit/{{id}}">Edit</a>
-            <a href="/delete">Delete</a>
-            </td>
-        </tr>
-        {{/each}}
-    </tbody>
-</table>
+<body class="index-page">
+    <div class="index-container">
+    <h1>Product List</h1>
+    <a href="/add">Add Product</a>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{price}}</td>
+                <td>
+                    <a href="/edit/{{id}}">Edit</a>
+                    <a href="/delete/{{id}}">Delete</a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    </div>
+</body>

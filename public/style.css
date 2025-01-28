@@ -22,6 +22,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
+
 .add-form label {
     font-weight: bold;
 }
@@ -99,7 +100,7 @@ thead {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #030303;
     padding: 0.75rem;
     text-align: left;
     font-size: 0.9rem;
@@ -107,10 +108,6 @@ th, td {
 
 tr:nth-child(even) {
     background-color: #f9f9f9; 
-}
-
-tr:hover {
-    background-color: #f1f1f1; 
 }
 
 th {
@@ -135,7 +132,7 @@ td {
     }
 
     th {
-        background-color: #f4f4f9;
+        background-color: #3f3f64;
         color: #333;
         text-align: left;
         font-size: 0.75rem;
@@ -145,3 +142,79 @@ td {
         margin-bottom: 1rem;
     }
 }
+
+.edit-form-container {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .edit-form-container h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .edit-form div {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .edit-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 5px;
+  }
+  
+  .edit-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .edit-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  .edit-form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .edit-form-container a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .edit-form-container a:hover {
+    color: #0056b3;
+  }
+  

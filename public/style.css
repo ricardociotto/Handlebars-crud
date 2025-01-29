@@ -1,5 +1,7 @@
 .add-Products{
    text-align: center;
+   position: relative;
+   top: 500px;
 }
 
 .form-container {
@@ -13,8 +15,10 @@
 .add-form {
     display: flex;
     flex-direction: column; 
+    position: relative;
+    top: 500px;
     gap: 1rem; 
-    width: 300px; 
+    width: 600px; 
     padding: 1rem; 
     background-color: #fff; 
     border: 1px solid #ccc; 
@@ -48,7 +52,7 @@ body.index-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 90vh; 
     padding: 1rem;
 }
 
@@ -150,9 +154,9 @@ td {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 500px;
     text-align: center;
   }
   

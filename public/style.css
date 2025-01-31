@@ -1,79 +1,132 @@
-.add-Products{
-   text-align: center;
-   position: relative;
-   top: 500px;
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.form-container {
+/* Estilos gerais */
+body {
+    padding-top: 60px; /* Ajuste para a navbar fixa */
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* Removendo padding-top para páginas sem navbar */
+body.no-navbar {
+    padding-top: 0;
+}
+
+/* Formulários de Login e Registro */
+.auth-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 100%; 
+    height: 100vh;
 }
 
-.add-form {
-    display: flex;
-    flex-direction: column; 
-    position: relative;
-    top: 500px;
-    gap: 1rem; 
-    width: 600px; 
-    padding: 1rem; 
-    background-color: #fff; 
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+.auth-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
 }
 
+.auth-form h1 {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
 
-.add-form label {
+.auth-form div {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.auth-form label {
     font-weight: bold;
+    display: block;
 }
-.add-form button {
-    padding: 0.5rem;
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: #007bff;
     color: white;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.add-form button:hover {
+.auth-form button:hover {
     background-color: #0056b3;
 }
 
+.auth-form a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
 
+.auth-form a:hover {
+    color: #0056b3;
+}
+
+/* Página principal */
 body.index-page {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9; 
-    color: #333; 
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh; 
+    min-height: 90vh;
     padding: 1rem;
 }
 
 .index-container {
-    background-color: #fff; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    width: 100%; 
-    text-align: center; 
+    width: 100%;
+    text-align: center;
 }
-
 
 .index-container h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #007bff; 
+    color: #007bff;
 }
-
 
 .index-container a {
     display: inline-block;
@@ -88,18 +141,18 @@ body.index-page {
 }
 
 .index-container a:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
 }
 
-
+/* Tabelas */
 table {
     width: 100%;
-    border-collapse: collapse; 
+    border-collapse: collapse;
     margin-top: 1rem;
 }
 
 thead {
-    background-color: #007bff; 
+    background-color: #007bff;
     color: white;
 }
 
@@ -111,7 +164,7 @@ th, td {
 }
 
 tr:nth-child(even) {
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
 }
 
 th {
@@ -124,7 +177,7 @@ td {
     font-size: 0.9rem;
 }
 
-
+/* Responsividade para tabelas */
 @media (max-width: 600px) {
     table, thead, tbody, th, td, tr {
         display: block;
@@ -137,7 +190,7 @@ td {
 
     th {
         background-color: #3f3f64;
-        color: #333;
+        color: #fff;
         text-align: left;
         font-size: 0.75rem;
     }
@@ -147,78 +200,121 @@ td {
     }
 }
 
+/* Formulário de Adição */
+.add-products {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 600px;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.add-form label {
+    font-weight: bold;
+}
+
+.add-form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.add-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Formulário de Edição */
 .edit-form-container {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 20px 30px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
     margin: auto;
-    margin-top: 500px;
+    margin-top: 50px;
     text-align: center;
-  }
-  
-  .edit-form-container h1 {
+}
+
+.edit-form-container h1 {
     font-size: 24px;
-    color: #333333;
+    color: #333;
     margin-bottom: 20px;
-  }
-  
-  .edit-form div {
+}
+
+.edit-form div {
     margin-bottom: 15px;
     text-align: left;
-  }
-  
-  .edit-form label {
+}
+
+.edit-form label {
     display: block;
     font-size: 14px;
     font-weight: bold;
-    color: #555555;
+    color: #555;
     margin-bottom: 5px;
-  }
-  
-  .edit-form input {
+}
+
+.edit-form input {
     width: 100%;
     padding: 10px;
     font-size: 14px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
-  }
-  
-  .edit-form input:focus {
+}
+
+.edit-form input:focus {
     border-color: #007bff;
     outline: none;
     box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
-  }
-  
-  .edit-form button {
+}
+
+.edit-form button {
     background-color: #007bff;
-    color: #ffffff;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .edit-form button:hover {
+}
+
+.edit-form button:hover {
     background-color: #0056b3;
-  }
-  
-  .edit-form-container a {
+}
+
+.edit-form-container a {
     display: inline-block;
     margin-top: 20px;
     font-size: 14px;
     color: #007bff;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  .edit-form-container a:hover {
+}
+
+.edit-form-container a:hover {
     color: #0056b3;
-  }
-  
+}

@@ -36,6 +36,11 @@ app.use(
     res.render('login');
   }); 
 
+  app.use((req, res, next) => {
+    res.locals.isAuthenticated = !!req.session.userId; // Se existir um userId na sessão, retorna true
+    next();
+  });
+  
 
    app.post('/login', (req, res) => {
     const { username, password } = req.body;
@@ -69,6 +74,7 @@ app.use(
       res.redirect('/login');
     });
   }); 
+
    
   app.get('/logout', (req, res) => {
     req.session.destroy((err) => {
